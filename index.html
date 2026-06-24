@@ -1,55 +1,214 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sampriti's WBJEE Journey</title>
+<title>Sampriti's WBJEE Journey</title>
 
-    <style>
-        body{
-            background-color: lavender;
-            font-family: Arial;
-        }
+<style>
 
-       h1{
-    color: darkblue;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 2px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-h2{
-    font-size: 30px;
+
+body{
+    background: linear-gradient(135deg,#d8b4fe,#c7d2fe);
+    font-family: Arial, sans-serif;
+    min-height:100vh;
 }
-        p{
-    font-size: 20px;
+
+
+/* Cover Section */
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
 }
+
+.hero h1{
+    color:#1e1b4b;
+    font-size:45px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-top:15px;
+}
+
+
+/* Navigation Icons */
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:30px;
+}
+
+
+.icon{
+    background:white;
+    width:120px;
+    height:100px;
+    border-radius:20px;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 5px 15px gray;
+    transition:0.3s;
+}
+
+
+.icon:hover{
+    transform:translateY(-8px);
+}
+
+
+.icon span{
+    font-size:35px;
+}
+
+
+.icon p{
+    font-size:16px;
+    margin-top:10px;
+}
+
+
+
+/* Cards */
+
 .card{
-    background-color: white;
-    padding: 20px;
-    border-radius: 15px;
-    width: 300px;
-    margin: auto;
-    margin-bottom: 20px;
-    box-shadow: 5px 5px 15px gray;
+
+background:white;
+width:85%;
+max-width:500px;
+margin:25px auto;
+padding:25px;
+border-radius:20px;
+box-shadow:0 8px 20px gray;
+
 }
+
+
+.card h2{
+color:#312e81;
+margin-bottom:15px;
+}
+
+
+.card p{
+font-size:18px;
+line-height:1.6;
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.hero h1{
+font-size:32px;
+}
+
+.icon{
+width:100px;
+}
+
+}
+
+
 </style>
+
 </head>
+
+
 <body>
-    <h1>🌟 Sampriti Roy 🌟</h1>
-    <div class="card">
-    <h2>About Me</h2>
-    <p>I'm Sampriti and I'm preparing for WBJEE.</p>
-    <p>I'm also learning GitHub and Web Development.</p>
+
+
+<section class="hero">
+
+<h1>🌟 Sampriti Roy 🌟</h1>
+
+<p>My WBJEE Journey | Coding | Learning</p>
+
+</section>
+
+
+
+<div class="menu">
+
+
+<div class="icon">
+<span>📚</span>
+<p>Studies</p>
 </div>
-    <h2>WBJEE Aspirant 🚀</h2>
 
-    <p>Welcome to my first website.</p>
 
-    <p>I am learning HTML, GitHub and Web Development.</p>
+<div class="icon">
+<span>💻</span>
+<p>Coding</p>
+</div>
 
-    <h3>My Goals</h3>
 
-    <p>📚 Crack WBJEE</p>
-    <p>💻 Learn Programming</p>
-    <p>🌐 Build Websites</p>
+<div class="icon">
+<span>🚀</span>
+<p>Goals</p>
+</div>
+
+
+<div class="icon">
+<span>🌐</span>
+<p>Projects</p>
+</div>
+
+
+</div>
+
+
+
+<div class="card">
+
+<h2>👩 About Me</h2>
+
+<p>
+I'm Sampriti and I'm preparing for WBJEE.
+</p>
+
+<p>
+I'm also learning GitHub and Web Development.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>🎯 My Goals</h2>
+
+<p>📚 Crack WBJEE</p>
+
+<p>💻 Learn Programming</p>
+
+<p>🌐 Build Websites</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>✨ My Journey</h2>
+
+<p>
+This website is my first step into coding.
+I am learning step by step and building my skills.
+</p>
+
+</div>
+
+
 </body>
 </html>
