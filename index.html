@@ -21,20 +21,72 @@ body{
 /* Cover Section */
 
 .hero{
+    min-height: 90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:50px 20px;
+    padding:30px;
+
+    background:
+    radial-gradient(circle at top left,#ffffff 5%,transparent 25%),
+    radial-gradient(circle at bottom right,#ddd6fe 5%,transparent 30%);
 }
+
 
 .hero h1{
+    font-size:55px;
     color:#1e1b4b;
-    font-size:45px;
+    letter-spacing:3px;
+    animation:fadeIn 1.5s;
 }
+
 
 .hero p{
-    font-size:20px;
-    margin-top:15px;
+    margin-top:20px;
+    font-size:22px;
+    color:#312e81;
 }
 
+
+.hero button{
+
+    margin-top:30px;
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+
+    background:#312e81;
+    color:white;
+
+    font-size:18px;
+    cursor:pointer;
+
+    box-shadow:0 5px 15px gray;
+
+}
+
+
+.hero button:hover{
+    transform:scale(1.05);
+}
+
+
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
 
 /* Navigation Icons */
 
@@ -131,6 +183,8 @@ width:100px;
 <h1>🌟 Sampriti Roy 🌟</h1>
 
 <p>My WBJEE Journey | Coding | Learning</p>
+
+<button>Get Started</button>
 
 </section>
 
