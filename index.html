@@ -12,9 +12,14 @@
 }
 
 body{
-    background: linear-gradient(135deg,#d8b4fe,#c7d2fe);
-    font-family: Arial, sans-serif;
+    margin:0;
+    font-family:Arial, sans-serif;
     min-height:100vh;
+
+    background:
+    radial-gradient(circle at 10% 20%, #ffffff 0%, transparent 25%),
+    radial-gradient(circle at 90% 80%, #c4b5fd 0%, transparent 30%),
+    linear-gradient(135deg,#ddd6fe,#bfdbfe);
 }
 
 
@@ -153,7 +158,42 @@ margin-bottom:15px;
 font-size:18px;
 line-height:1.6;
 }
+.circle{
 
+position:fixed;
+border-radius:50%;
+filter:blur(1px);
+opacity:0.5;
+z-index:-1;
+
+}
+
+
+.one{
+width:200px;
+height:200px;
+background:#a78bfa;
+top:50px;
+left:50px;
+}
+
+
+.two{
+width:250px;
+height:250px;
+background:#93c5fd;
+bottom:30px;
+right:50px;
+}
+
+
+.three{
+width:120px;
+height:120px;
+background:#f0abfc;
+top:45%;
+right:20%;
+}
 
 /* Mobile */
 
@@ -177,7 +217,9 @@ width:100px;
 
 <body>
 
-
+<div class="circle one"></div>
+<div class="circle two"></div>
+<div class="circle three"></div>
 <section class="hero">
 
 <h1>🌟 Sampriti Roy 🌟</h1>
